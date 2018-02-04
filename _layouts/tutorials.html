@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<div class="full">
+<div class="content">
+  <div class="section-title-wrapper os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".2s" data-os-animation-duration=".8s">
+    <div class="flex-item-50">
+      <div class="section-title-wrapper_inner">
+      <p class="text-color-808080"><a href="{{ site.baseurl }}/tutorials">Tutorial</a></p> 
+      <h1>{{ page.title }}</h1>
+      </div> <!-- section-title-wrapper_inner -->
+    </div> <!-- flex-item-50 -->
+  </div><!-- section-title-wrapper -->
+</div> <!-- content -->
+</div><!-- full -->
+
+
+<div class="full">
+<div class="content">
+
+{% if page.fbiframe-video %} <!-- if video include the iframe code  -->
+  <div class="flex-container_row-space-around-stretch">
+    <div class="flex-item-100 os-animation" data-os-animation="fadeIn" data-os-animation-delay=".4s" data-os-animation-duration=".8s">
+        <div class="video-responsive *nomargin">
+        {{ page.fbiframe-video }}
+        </div><!-- video-responsive -->
+    </div> <!-- flex-item-70 -->   
+  </div> <!-- flex-container -->
+  {% else %}  <!-- if no video show the image hero  -->
+
+  <div class="flex-item-100 os-animation" data-os-animation="fadeIn" data-os-animation-delay=".4s" data-os-animation-duration=".8s">
+      {% if page.hero-image %} 
+        <img src="{{ site.baseurl }}/{{ page.hero-image }}" alt="{{ page.title }}" class="single-hero-image">   
+          {% else %}
+        <img src="https://dummyimage.com/1600x900/F4F3EE/E1E1DE&text=Facebook+Video+Player" alt="{{ page.title }}" class="single-hero-image">
+      {% endif %}
+  </div> <!-- flex-item-100 -->    
+{% endif %}
+
+
+<div class="flex-container_row-space-around-stretch">
+  <div class="flex-item-70">
+      <div class="rte tutorial-single">  
+        <div class="flex-item-100 tutorial-details">
+          {% if page.categories %} <p><strong class="tutorials-categories">{{ page.categories }}</strong></p> {% endif %}
+          {% if page.length %}<p>|</p> {% endif %}
+          {% if page.length %} <p><strong>{{ page.length }}</strong></p> {% endif %}
+        </div> <!-- tutorial-details -->
+        {{ content }}
+    </div> <!-- rte -->
+    </div> <!-- flex-item-70 -->   
+
+  <div class="flex-item-30">
+    {% include social-share.html %}
+  </div> <!-- flex-item-30 -->
+
+</div> <!-- flex-container -->
+</div> <!-- content -->
+</div><!-- full -->
+
+

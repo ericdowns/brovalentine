@@ -1,25 +1,16 @@
 ---
 layout: default
-title: Valentines
-permalink : /valentines/
+title: valentines
+permalink: /valentines/
 ---
 
-
-
-Test 
-<div class="full page-tutorial-single">
+ 
+<div class="full">
 <div class="content">
 
-	{% include tutorial-hero-section.html %}
-	
-<div class="post-card-wrapper os-animation" data-os-animation="fadeIn" data-os-animation-delay=".4s" data-os-animation-duration=".8s">
-	{% assign my_order1 = site.tutorials | sort: "order" %}
-	{% for tutorials in my_order1 %}
-		{% include tutorial-loop.html %}
+	{% for item in site.valentines %}
+	    <h2><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} </a></h2>
 	{% endfor %}
-</div> <!-- post-card-wrapper -->
 
 </div> <!-- content -->
 </div><!-- full -->
-
-

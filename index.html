@@ -4,6 +4,24 @@ title: Home Page
 excerpt: Bro Valentine Description
 ---
 
-work
 
-<h1>Home Page</h1>
+
+<div class="full">
+<div class="content-full">
+<div class="flex-container_row-space-between-stretch">
+
+
+{% for item in site.valentines %}
+	<div class="flex-item-33">
+		<h2><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} </a></h2>
+	</div>
+{% endfor %}
+
+</div>
+</div><!-- content-full -->
+</div><!-- full -->
+
+
+
+ 
+	

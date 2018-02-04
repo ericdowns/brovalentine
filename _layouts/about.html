@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="full">
+<div class="content">
+<div class="flex-container_row-space-around-stretch">
+  
+  
+  <div class="flex-item-50">
+  <header class="section-page-header">
+    <h1>{{ page.title }} Using About Layout</h1>
+  </header>
+  
+    <img src="{{ page.image_path }}">
+
+    <p>{{ content }} </p>
+
+        {% if page.format %}
+     		<p>Format: {{ page.format }}</p>
+    	{% endif %}
+
+  
+
+    </div><!-- flex-item-50 -->
+
+</div> <!-- flex-container -->
+</div> <!-- content -->
+</div><!-- full -->

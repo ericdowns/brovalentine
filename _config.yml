@@ -23,6 +23,8 @@ defaults:
 
 markdown: kramdown
 
+include: ["_pages"]
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -39,3 +41,5 @@ exclude:
   - package.json
   - bower.json
   - bower_components
+
+
