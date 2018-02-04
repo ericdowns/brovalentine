@@ -13,6 +13,7 @@ collections:
     valentines:
       output: true
       permalink: /:collection/:path 
+      
 defaults:
   - scope:
       path: ""
@@ -23,8 +24,9 @@ defaults:
 markdown: kramdown
 
 plugins:
-  - jekyll-feed
-
+  - jekyll-paginate
+  - jekyll-sitemap
+  
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -33,3 +35,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - gulpfile.js
+  - package.json
+  - bower.json
+  - bower_components

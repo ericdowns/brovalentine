@@ -1,4 +1,3 @@
-source "https://rubygems.org"
-#gem "jekyll", "~> 3.7.2"
+source 'https://rubygems.org'
 gem 'github-pages'
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll-archives"
