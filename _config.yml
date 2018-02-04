@@ -1,0 +1,38 @@
+title: Bro Valentine
+email: eric@grainandmortar.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Valentine's for your Bro's
+baseurl: "/brovalentine"
+url: "http://ericdowns.github.io"
+author: Grain & Mortar
+relative_permalinks: false
+permalink: /:title/
+
+collections:
+    valentines:
+      output: true
+      permalink: /:collection/:path 
+
+defaults:
+  - scope:
+      path: ""
+      type: valentines
+    values:
+      layout: valentines
+
+# Build settings
+markdown: kramdown
+
+#theme: minima
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

@@ -1,0 +1,42 @@
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}">
+
+<!-- Favicons -->
+<!-- <link rel="shortcut icon" type="image/png" href="{{ '/img/icon-196x196.png' | prepend: site.baseurl }}">
+<link rel="shortcut icon" sizes="196x196" href="{{ '/img/icon-196x196.png' | prepend: site.baseurl }}">
+<link rel="apple-touch-icon" href="{{ '/img/icon-196x196.png' | prepend: site.baseurl }}"> -->
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content="{{ page.title }}"/>
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/social-card-image.jpg"/> 
+<meta property="og:url" content="{{ page.url }}"/>
+<meta property="og:site_name" content="{{ site.title }}"/>
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}"/>
+
+<meta name="twitter:title" content="{{ page.title }}" />
+<meta name="twitter:card" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}"/>
+<meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/img/social-card-image.jpg">
+<meta name="twitter:description" content="{{ site.description }}">
+<meta name="twitter:url" content="{{ page.url }}"/>
+
+<title>
+  {% if page.title %} 
+    {{ page.title }} • {{ site.description }} 
+  {% else %} 
+    {{ site.title }} 
+  {% endif %}
+</title>
+
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Muli:200,300,300i,400,400i,600,600i,700,700i" >
+<!-- <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}"/>
+ -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script> 
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+
+
+
+</head>
