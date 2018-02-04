@@ -1,7 +1,6 @@
 title: Bro Valentine
 email: eric@grainandmortar.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Valentine's for your Bro's
+description: Valentine's for your Bro's
 baseurl: "/brovalentine"
 url: "http://ericdowns.github.io"
 author: Grain & Mortar
@@ -20,10 +19,7 @@ defaults:
     values:
       layout: valentines
 
-# Build settings
 markdown: kramdown
-
-#theme: minima
 
 plugins:
   - jekyll-feed
