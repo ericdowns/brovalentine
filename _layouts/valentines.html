@@ -4,15 +4,24 @@ layout: default
 
 <div class="full">
 <div class="content">
-	<div class="section-title-wrapper os-animation" data-os-animation="fadeInDown" data-os-animation-delay=".2s" data-os-animation-duration=".8s">
-		<div class="flex-item-60">
-			<div class="section-title-wrapper_inner">
-			<p class="text-color-808080"><a href="{{ site.baseurl }}/user-stories">User Story</a></p>	
-			<h1>{{ page.title }}</h1>
 
-			Valentine archive page
-			</div> <!-- section-title-wrapper_inner -->
+
+<div class="flex-container_row-space-around-stretch">
+		<div class="flex-item-60">
+			<p class="text-color-808080"><a href="{{ site.baseurl }}/valentines">Valentines</a></p>	
+			<h1>{{ page.title }}</h1>
 		</div> <!-- flex-item-50 -->
-	</div><!-- section-title-wrapper -->
+</div> <!-- flex-container -->
+
+
+<div class="flex-container_row-space-around-stretch">
+  <div class="flex-item-70">
+      <div class="rte">  
+        {{ content }}
+      </div> <!-- rte -->
+    </div> <!-- flex-item-70 -->   
+</div> <!-- flex-container -->
+
+
 </div> <!-- content -->
 </div><!-- full -->

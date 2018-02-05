@@ -1,3 +1,6 @@
+/* @override 
+	http://127.0.0.1:4000/brovalentine/css/framework.css */
+
 .full:before, .full:after, .content:before, .content:after, .content-full:before, .content-full:after {
   content: "";
   display: table;
@@ -40,26 +43,13 @@
   max-width: 1600px;
 }
 
-/*Sticky Footer*/
-.section-fullpage-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  /*  margin-top: 6em;*/
+
+main {
+background: #FC2E5A;
+min-height: 100vh;
 }
 
-.wrapper {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding-bottom: 60px;
-  padding-top: 0px;
-}
+
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -101,7 +91,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  /*      outline: 1px solid #eeeeee;*/
 }
 
 .flex-container_row-space-around-center {
@@ -120,8 +109,6 @@
   -ms-flex-align: center;
   -webkit-box-align: center;
   align-items: center;
-  /*  outline: 1px solid #eeeeee;*/
-  /*min-height: 70vh;*/
 }
 
 .flex-container_row-space-around-stretch {
@@ -140,7 +127,6 @@
   -ms-flex-align: stretch;
   -webkit-box-align: stretch;
   align-items: stretch;
-    outline: 1px solid #eeeeee;
 }
 
 .flex-container_row-flex-start-center {
@@ -207,7 +193,7 @@
 .flex-item-30,
 .flex-item-25,
 .flex-item-20 {
-  /*    outline: 1px solid rgba(34, 34, 34, 0.08);*/
+/*      outline: 1px solid rgba(34, 34, 34, 0.08);*/
   /*  background-color: rgba(34, 34, 34, 0.05);*/
 }
 
@@ -271,7 +257,7 @@
   flex-basis: 30%;
 }
 
-@media all and (max-width: 950px) {
+@media all and (max-width: 750px) {
   .flex-item-90, .flex-item-80, .flex-item-75, .flex-item-70, .flex-item-60, .flex-item-65, .flex-item-50, .flex-item-40, .flex-item-45, .flex-item-33, .flex-item-30 {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -335,24 +321,4 @@
   flex: 1 1 auto;
   outline: 1px solid rgba(34, 34, 34, 0.3);
   background-color: rgba(34, 34, 34, 0.1);
-}
-
-.section-code {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  outline: 1px solid rgba(107, 229, 171, 0.5);
-  background-color: rgba(107, 229, 171, 0.1);
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.section-code p {
-  margin: 0px;
-  text-align: center;
-  color: #22c879;
-}
-
-.section-code p.description {
-  font-size: 12px;
 }

@@ -1,27 +1,41 @@
 ---
 layout: default
-title: Home Page
+title: Bro Valentine
 excerpt: Bro Valentine Description
 ---
+
+<div class="full">
+	<div class="content">
+		 <div class="flex-container_row-space-around-stretch section-welcome-holder">
+			<div class="flex-item-50">
+					<!-- <h2> Don't be a Dick, Send your Bro a valentine </h2>-->				
+					<br>
+ 				<h2><i class='fa fa-heart pulse'></i></h2>
+			</div>
+		</div>
+	</div><!-- content-full -->
+</div><!-- full -->
 
 
 
 <div class="full">
-<div class="content-full">
-<div class="flex-container_row-space-between-stretch">
+<div class="content"> 
 
+<div class="section-vertical-horizontal-center">
+	<div class="section-vertical-horizontal-center_item">
 
-{% for item in site.valentines %}
-	<div class="flex-item-33">
-		<h2><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} </a></h2>
+		<div class="flex-container_row-flex-start-stretch section-valentine-holder">
+			{% for item in site.valentines %}
+				<div class="flex-item-30 item-valentine">
+					<h2><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} </a></h2>
+				</div> <!-- flex-item -->
+			{% endfor %}
+		</div> <!-- flex-container -->
+
 	</div>
-{% endfor %}
-
 </div>
 </div><!-- content-full -->
 </div><!-- full -->
-
-
 
  
 	
